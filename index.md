@@ -1,8 +1,19 @@
+Hi all! I'm Alper Reha Yazgan, I'm studying Computer Engineering 4. Grade at [Yıldız Technical University](https://www.yildiz.edu.tr/en).  
 
-> Hi all!
-> I'm here with my first blog post. After today i will publish my articles on my personal blog page.
-> I'm planning publish articles constantly.
-> If you wish to see my latest posts, you could go to the home page.
-> I'm glad to be a blogger :). So lets get started!
->
-> **— Alper Reha Yazgan**
+In my spare time, I record videos about Programming languages and Cloud Computing at my [Youtube Channel](https://youtube.com/c/alperrehayazgan) (You can subscribe if you want :)) 
+
+I'm interested in:
+
+- **Web Services**, building web application.
+- **Cloud Computing**, deploying and managing web application via Cloud.
+- **DevOps**, CI/CD and automated deploy mentality.
+
+If you interested in like my interested. We could be connected via my social media accounts!
+
+I'm interested in:
+
+- [LinkedIn](https://www.linkedin.com/in/alperreha).
+- [Youtube](https://youtube.com/c/alperrehayazgan).
+- [Medium](https://medium.com/@alperreha).
+- [Instagram](https://instagram.com/alperreha38).
+- [Twitter](https://twitter.com/alperreha).
