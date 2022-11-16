@@ -77,6 +77,9 @@
             class="px-4 py-2 text-sm font-semibold text-white bg-gray-800 rounded hover:bg-gray-700">Projects</button>
         <button id="medium-button"
             class="ml-4 px-4 py-2 text-sm font-semibold text-white bg-gray-800 rounded hover:bg-gray-700">Medium</button>
+        <button id="blog-posts-button"
+            class="ml-4 px-4 py-2 text-sm font-semibold text-white bg-gray-800 rounded hover:bg-gray-700">Blog
+            Posts</button>
     </div>
 
     <div style="height: 10px;"></div>
@@ -139,6 +142,55 @@
         // on-medium-button-click code
         // on-github-button-click code
         // on-blog-posts-button-click code
+
+        function onBlogPostsButtonClick() {
+            // blog md files are located in https://github.com/AlperRehaYAZGAN/alperreha.github.io project link and blogs folder on branch master.
+            // fetch all md files from github api and list them.
+            // when user click on one of them, fetch the md file and show it on the screen.
+
+            // fetch all md files from github api
+            $.ajax({
+                url: "https://api.github.com/repos/AlperRehaYAZGAN/alperreha.github.io/contents/blogs?ref=master",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    // clear content div
+                    $("#content").empty();
+
+                    // foreach post create underlined link title on left side and right side is date
+                    $.each(data, function (index, value) {
+                        // create div for each post
+                        var div = $("<div></div>");
+                        div.addClass("flex items center justify-start");
+                        // add padding
+                        div.css("padding", "10px");
+
+                        // create link for each post (left side)
+                        var link = $("<a></a>");
+                        link.addClass("text-gray-400 hover:text-blue-500");
+                        link.attr("href", "https://alperreha.yazgan.xyz/blogs?md=" + value.name);
+                        link.text(value.name);
+
+                        // create date for each post (right side)
+                        var date = $("<p></p>");
+                        date.addClass("ml-4 text-sm text-gray-400");
+                        date.text(value.last_modified);
+
+                        // append link and date to div
+                        div.append(link);
+                        div.append(date);
+
+                        // append div to content div
+                        $("#content").append(div);
+                    });
+                },
+                error: function (data) {
+                    // show error message
+                    $("#content").empty();
+                    $("#content").append("<p>Something went wrong. Please try again later.</p>");
+                }
+            });
+        }
 
         function onMediumButtonClick() {
             $("#content").html("");
@@ -246,6 +298,11 @@
         }
 
         $(document).ready(function () {
+            // on-blog-button-click
+            $("#blog-posts-button").click(function () {
+                onBlogPostsButtonClick();
+            });
+
             // on-medium-button-click code
             $("#medium-button").click(function () {
                 onMediumButtonClick();
