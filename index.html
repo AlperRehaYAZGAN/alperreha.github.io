@@ -37,21 +37,23 @@
         </div>
         <div class="flex flex-col items-center justify-center mt-4">
 
-            <p class="text-sm text-gray-400" style="max-width: 720px;">I am a software developer who is passionate about
-                making open-source more
-                accessible, creating technology to elevate people, and building community. Some technologies I enjoy
-                working
-                with include DevOps, CI/CD Pipelines and Cloud Computing. In development I mainly use <a
-                    href="https://go.dev" class="text-blue-400">Go</a> and <a href="https://www.nodejs.org"
-                    class="text-blue-400">Node.js</a>.
-            </p>
+            <div class="w-3/4">
+                <p class="text-sm text-gray-400">I am a software developer who is passionate about
+                    making open-source more
+                    accessible, creating technology to elevate people, and building community. Some technologies I enjoy
+                    working
+                    with include DevOps, CI/CD Pipelines and Cloud Computing. In development I mainly use <a
+                        href="https://go.dev" class="text-blue-400">Go</a> and <a href="https://www.nodejs.org"
+                        class="text-blue-400">Node.js</a>.
+                </p>
 
-            <p class="mt-2 text-sm text-gray-400" style="max-width: 720px;">I am currently working as a software
-                developer at <a href="https://www.turktelekom.com.tr" class="text-blue-400">Turk Telekom</a> via <a
-                    href="https://www.gantek.com" class="text-blue-400">Gantek</a>. I am also a student at <a
-                    href="https://www.yildiz.edu.tr" class="text-blue-400">Yildiz Technical
-                    University</a>.
-            </p>
+                <p class="mt-2 text-sm text-gray-400">I am currently working as a software
+                    developer at <a href="https://www.turktelekom.com.tr" class="text-blue-400">Turk Telekom</a> via <a
+                        href="https://www.gantek.com" class="text-blue-400">Gantek</a>. I am also a student at <a
+                        href="https://www.yildiz.edu.tr" class="text-blue-400">Yildiz Technical
+                        University</a>.
+                </p>
+            </div>
         </div>
         <!-- Socials in one line multi icon -->
         <div class="flex items-center justify-center mt-4">
@@ -89,12 +91,14 @@
 
     <!-- div for contents -->
     <div class="flex items-center justify-center mt-4">
-        <div id="content">
-            <!-- content will be fetched from jquery. Until its done. Show loading -->
-            <div class="flex items-center justify-center mt-4">
-                <div class="flex flex-col items-center justify-center">
-                    <i class="fas fa-spinner fa-spin fa-3x text-gray-400"></i>
-                    <p class="mt-2 text-sm text-gray-400">Loading...</p>
+        <div class="w-3/4">
+            <div id="content">
+                <!-- content will be fetched from jquery. Until its done. Show loading -->
+                <div class="flex items-center justify-center mt-4">
+                    <div class="flex flex-col items-center justify-center">
+                        <i class="fas fa-spinner fa-spin fa-3x text-gray-400"></i>
+                        <p class="mt-2 text-sm text-gray-400">Loading...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,6 +176,17 @@
                             `;
                         $("#content").append(post);
                     });
+                },
+                error: function (error) {
+                    // show error message
+                    $("#content").html(`
+                        <div class="flex items center justify-center mt-4">
+                            <div class="flex flex-col items-center justify-center">
+                                <i class="fas fa-exclamation-triangle fa-3x text-gray-400"></i>
+                                <p class="mt-2 text-sm text-gray-400">Error: ${JSON.stringify(error)}</p>
+                            </div>
+                        </div>
+                    `);
                 }
             });
         }
@@ -213,6 +228,19 @@
                             `;
                         $("#content").append(project);
                     });
+                },
+                error: function (error) {
+                    // show error message
+                    $("#content").html(`
+                        <div class="flex flex-col items-center justify-center mt-4">
+                            <div class="flex flex-col items-center justify-center">
+                                <div class="flex flex-col items-center justify-center">
+                                    <h1 class="mt-4 text-3xl font-bold text-white">Error</h1>
+                                    <p class="mt-2 text-sm text-gray-400">Something went wrong.</p>
+                                </div>
+                            </div>
+                        </div>
+                    `);
                 }
             });
         }
