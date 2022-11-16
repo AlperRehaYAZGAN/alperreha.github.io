@@ -14,7 +14,7 @@ If you interested in like my interested. We could be connected via my social med
 I'm interested in:
 
 - [LinkedIn](https://www.linkedin.com/in/alperreha).
-- [Youtube](https://youtube.com/c/alperrehayazgan).
+- [Youtube]().
 - [Medium](https://medium.com/@alperreha).
 - [Instagram](https://instagram.com/alperreha38).
 - [Twitter](https://twitter.com/alperreha).
