@@ -28,8 +28,7 @@ jobs:
 
       - name: build
         env:
-          # BASE_PATH: '/${{ github.event.repository.name }}'
-          BASE_PATH: ''
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 
@@ -52,6 +51,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # add extra step to echo "steps.deployment.outputs.page_url"
+      - name: Echo page_url
+        run: echo ${{ steps.deployment.outputs.page_url }}
       - name: Deploy
-      id: deployment
-      run: npm run deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
