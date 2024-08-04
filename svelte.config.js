@@ -1,9 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-// TODO: add dev env check
-// const dev = process.argv.includes('dev');
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
@@ -24,9 +21,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			// TODO: Enable dev env checks
-			// base: dev ? '' : process.env.BASE_PATH,
-			base: process.env.NODE_ENV === 'production' ? '' : ''
+			base: ''
 		}
 	}
 };
