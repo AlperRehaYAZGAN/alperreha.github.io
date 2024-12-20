@@ -25,7 +25,7 @@ blog({
       // "rant.html": "rant",
     }),
   ],
-  favicon: "favicon.ico",
+  favicon: "./static/favicon.ico",
 
   // header: <header>Your custom header</header>,
   // section: (post: Post) => <section>Your custom section with access to Post props.</section>,
