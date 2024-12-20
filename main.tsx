@@ -6,7 +6,7 @@ blog({
   title: "rehash",
   author: "Alper Reha Yazgan",
   description: "alperreha - personal blog page",
-  avatar: "./statidc/avatar.png",
+  avatar: "./static/avatar.png",
   avatarClass: "rounded-full",
   lang: "en",
   showHeaderOnPostPage: true,
