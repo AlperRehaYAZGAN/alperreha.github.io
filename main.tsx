@@ -21,7 +21,7 @@ blog({
     { title: "GitHub", url: "https://github.com/alperrehayazgan" },
     { title: "Twitter", url: "https://twitter.com/alperreha" },
     { title: "Linkedin", url: "https://linkedin.com/in/alperreha" },
-    { title: "You tube", url: "https://www.youtube.com/@rehash_dev" },
+    { title: "Youtube", url: "https://www.youtube.com/@rehash_dev" },
   ],
 
   middlewares: [
