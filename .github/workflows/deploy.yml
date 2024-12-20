@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-deno-
 
       - name: Install dependencies
-        run: deno cache main.ts
+        run: deno cache main.tsx
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
