@@ -1,11 +1,13 @@
 ---
-title: index!
+title: Portfolio
+slug: portfolio-1
+description: alperreha personal portfolio details
 publish_date: 2024-12-18
 ---
 
-Hi all! I'm Alper Reha Yazgan, I'm studying Computer Engineering 4. Grade at [Yıldız Technical University](https://www.yildiz.edu.tr/en).  
+Hi all! I'm alperreha, I am a Software Engineer who loves fullstack development and devops.  
 
-In my spare time, I record videos about Programming languages and Cloud Computing at my [Youtube Channel](https://youtube.com/c/alperrehayazgan) (You can subscribe if you want :)) 
+In my spare time, I record videos about Programming languages and Cloud Computing at my [Youtube Channel](https://youtube.com/c/alperrehayazgan) (You can subscribe if you want 🔥) 
 
 I'm interested in:
 
@@ -18,7 +20,7 @@ If you interested in like my interested. We could be connected via my social med
 I'm interested in:
 
 - [LinkedIn](https://www.linkedin.com/in/alperreha).
-- [Youtube](https://youtube.com/c/alperrehayazgan).
+- [Youtube](https://www.youtube.com/@rehash_dev).
 - [Medium](https://medium.com/@alperreha).
-- [Instagram](https://instagram.com/alperreha38).
+- [Instagram](https://instagram.com/alperreha_).
 - [Twitter](https://twitter.com/alperreha).

@@ -3,19 +3,25 @@
 import blog, { ga, redirects, h } from "blog";
 
 blog({
-  title: "rehash",
+  title: "rehash_ - alperreha blog page",
   author: "Alper Reha Yazgan",
   description: "alperreha - personal blog page",
+  ogImage: {
+    url: "/static/avatar.png",
+    twitterCard: "summary",
+  },
   avatar: "./static/avatar.png",
   avatarClass: "rounded-full",
   lang: "en",
   showHeaderOnPostPage: true,
   dateFormat: (date) =>
-    new Intl.DateTimeFormat("tr-TR", { dateStyle: "long" }).format(date),
+    new Intl.DateTimeFormat("en-GB", { dateStyle: "medium" }).format(date),
   links: [
     { title: "Email", url: "mailto:alper@yazgan.xyz" },
     { title: "GitHub", url: "https://github.com/alperrehayazgan" },
     { title: "Twitter", url: "https://twitter.com/alperreha" },
+    { title: "Linkedin", url: "https://linkedin.com/in/alperreha" },
+    { title: "You tube", url: "https://www.youtube.com/@rehash_dev" },
   ],
 
   middlewares: [
