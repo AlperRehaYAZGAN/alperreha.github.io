@@ -3,7 +3,7 @@
 import blog, { ga, redirects, h } from "blog";
 
 blog({
-  title: "rehash_ - alperreha blog page",
+  title: "rehash_",
   author: "Alper Reha Yazgan",
   description: "alperreha - personal blog page",
   ogImage: {
