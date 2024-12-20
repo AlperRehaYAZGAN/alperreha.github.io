@@ -1,3 +1,8 @@
+---
+title: About me!
+publish_date: 2024-12-19
+---
+
 # About Me.   
 Hi all! I'm Alper Reha Yazgan, I'm studying Computer Engineering 4. Grade at [Yıldız Technical University](https://www.yildiz.edu.tr/en).  
 

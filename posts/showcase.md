@@ -1,3 +1,8 @@
+---
+title: showcase!
+publish_date: 2024-12-17
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/AlperRehaYAZGAN/alperreha.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
