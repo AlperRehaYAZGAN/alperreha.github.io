@@ -2,6 +2,22 @@
 
 import blog, { ga, redirects, h } from "blog";
 
+export function addGoogleAnalyticsCors(): any {
+  return async function (
+    request: Request,
+    ctx: any,
+  ): Promise<Response> {
+    const response = await ctx.next() as Response;
+
+    // Add CORS headers for googletagmanager.com
+    response.headers.set("Access-Control-Allow-Origin", "https://www.googletagmanager.com");
+    response.headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
+    return response;
+  };
+}
+
 blog({
   title: "rehash_",
   author: "Alper Reha Yazgan",
@@ -24,6 +40,7 @@ blog({
     { title: "Youtube", url: "https://www.youtube.com/@rehash_dev" },
   ],
   middlewares: [
+    addGoogleAnalyticsCors(),
     ga("G-VDMQW1ZLFJ"),
   ],
   favicon: "./static/favicon.ico",
